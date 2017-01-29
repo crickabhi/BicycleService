@@ -1,0 +1,6 @@
+framework module Pods_BicycleServiceProvider {
+  umbrella header "Pods-BicycleServiceProvider-umbrella.h"
+
+  export *
+  module * { export * }
+}
