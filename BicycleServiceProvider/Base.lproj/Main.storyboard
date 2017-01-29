@@ -46,6 +46,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kmV-cf-Jnb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.15082702040672302" green="0.70029145479202271" blue="0.24901452660560608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -68,7 +69,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle-wallpaper-10.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tIB-S9-Jxi">
+                            <imageView userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tIB-S9-Jxi">
                                 <rect key="frame" x="-4" y="0.0" width="383" height="687"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBo-80-ueB">
@@ -178,7 +179,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bicycle-wallpaper-10.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Cjx-cD-mAJ">
+                            <imageView userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Cjx-cD-mAJ">
                                 <rect key="frame" x="-4" y="0.0" width="383" height="687"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eO-5H-Ms7">
@@ -288,7 +289,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Payment" id="7KR-Uu-mgo">
                         <barButtonItem key="rightBarButtonItem" title="Pay" id="yg0-a5-uOx">
-                            <color key="tintColor" red="0.20784313730000001" green="0.58039215690000001" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="tapOnPay:" destination="ta2-FN-RKL" id="EoO-Bv-g5u"/>
                             </connections>
@@ -304,6 +305,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bicycle-wallpaper-10.jpg" width="1920" height="1080"/>
+        <image name="backgroundImage.jpg" width="1920" height="1080"/>
     </resources>
 </document>

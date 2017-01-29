@@ -123,7 +123,7 @@ class ViewController: UIViewController , GMSMapViewDelegate {
     func storeViewinfo(_ storeName: String) -> UIView {
         
         let storeInfoView = UIView(frame: CGRect(x: 100, y: 200,width: 70, height: 30))
-        storeInfoView.backgroundColor=UIColor.green
+        storeInfoView.backgroundColor = UIColor.green
         
         let title = UILabel(frame: CGRect(x: 0,y: 0,width: 70,height: 30))
         title.font = title.font.withSize(10)
