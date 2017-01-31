@@ -11,6 +11,9 @@
 		533DE5506E70C6790C5CE931 /* Pods_BicycleServiceProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D69E4BEC416E951F8973C35 /* Pods_BicycleServiceProvider.framework */; };
 		83B30D9FEE9EB1153414DC48 /* Pods_BicycleServiceProviderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F07BFFC90ED1D5DE81013F /* Pods_BicycleServiceProviderTests.framework */; };
 		D138E43D1E3E230D00609E4B /* backgroundImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D138E43C1E3E230D00609E4B /* backgroundImage.jpg */; };
+		D13961F91E40A12000D88C52 /* BicycleServiceProviderHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13961F81E40A12000D88C52 /* BicycleServiceProviderHomeTests.swift */; };
+		D13961FB1E40A14100D88C52 /* BicycleServiceProviderPaymentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13961FA1E40A14100D88C52 /* BicycleServiceProviderPaymentTests.swift */; };
+		D13961FD1E40A16200D88C52 /* BicycleServiceProviderRegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13961FC1E40A16200D88C52 /* BicycleServiceProviderRegistrationTests.swift */; };
 		D15AB6711E3DC05C00860F93 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AB6701E3DC05C00860F93 /* SwiftyJSON.swift */; };
 		D15AB6751E3DC06B00860F93 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AB6721E3DC06B00860F93 /* AccessToken.swift */; };
 		D15AB6761E3DC06B00860F93 /* PaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15AB6731E3DC06B00860F93 /* PaymentDetails.swift */; };
@@ -92,6 +95,9 @@
 		BA8B1ED9328F05812D87B651 /* Pods-BicycleServiceProviderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicycleServiceProviderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BicycleServiceProviderTests/Pods-BicycleServiceProviderTests.release.xcconfig"; sourceTree = "<group>"; };
 		CFB9842CCA0A17996EDFA391 /* Pods-BicycleServiceProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicycleServiceProvider.release.xcconfig"; path = "Pods/Target Support Files/Pods-BicycleServiceProvider/Pods-BicycleServiceProvider.release.xcconfig"; sourceTree = "<group>"; };
 		D138E43C1E3E230D00609E4B /* backgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgroundImage.jpg; sourceTree = "<group>"; };
+		D13961F81E40A12000D88C52 /* BicycleServiceProviderHomeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleServiceProviderHomeTests.swift; sourceTree = "<group>"; };
+		D13961FA1E40A14100D88C52 /* BicycleServiceProviderPaymentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleServiceProviderPaymentTests.swift; sourceTree = "<group>"; };
+		D13961FC1E40A16200D88C52 /* BicycleServiceProviderRegistrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleServiceProviderRegistrationTests.swift; sourceTree = "<group>"; };
 		D15AB6701E3DC05C00860F93 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D15AB6721E3DC06B00860F93 /* AccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		D15AB6731E3DC06B00860F93 /* PaymentDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentDetails.swift; sourceTree = "<group>"; };
@@ -403,6 +409,9 @@
 			isa = PBXGroup;
 			children = (
 				D1F263941E3D3690002CAC43 /* BicycleServiceProviderTests.swift */,
+				D13961F81E40A12000D88C52 /* BicycleServiceProviderHomeTests.swift */,
+				D13961FA1E40A14100D88C52 /* BicycleServiceProviderPaymentTests.swift */,
+				D13961FC1E40A16200D88C52 /* BicycleServiceProviderRegistrationTests.swift */,
 				D1F263961E3D3690002CAC43 /* Info.plist */,
 			);
 			path = BicycleServiceProviderTests;
@@ -754,7 +763,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13961FB1E40A14100D88C52 /* BicycleServiceProviderPaymentTests.swift in Sources */,
+				D13961FD1E40A16200D88C52 /* BicycleServiceProviderRegistrationTests.swift in Sources */,
 				D1F263951E3D3690002CAC43 /* BicycleServiceProviderTests.swift in Sources */,
+				D13961F91E40A12000D88C52 /* BicycleServiceProviderHomeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

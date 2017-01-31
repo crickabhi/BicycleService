@@ -9,7 +9,7 @@
 import XCTest
 
 class BicycleServiceProviderUITests: XCTestCase {
-        
+   
     override func setUp() {
         super.setUp()
         
@@ -19,7 +19,7 @@ class BicycleServiceProviderUITests: XCTestCase {
         continueAfterFailure = false
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
+        
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
@@ -28,9 +28,53 @@ class BicycleServiceProviderUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testLogin() {
+        
+        let app = XCUIApplication()
+        app.textFields["Email"].tap()
+        //app.textFields["Email"]
+        app.secureTextFields["Password"].tap()
+        //app.secureTextFields["Password"]
+        app.buttons["LOGIN"].tap()
+        
+    }
+    
+    func testRegistration(){
+        
+        let app = XCUIApplication()
+        app.buttons["SIGN UP"].tap()
+        
+        let emailTextField = app.textFields["Email"]
+        emailTextField.tap()
+        //app.textFields["Email"]
+        emailTextField.tap()
+        app.secureTextFields["Password"].tap()
+        //app.secureTextFields["Password"]
+        app.buttons["SUBMIT"].tap()
+        
+    }
+    
+    func testPayment(){
+        
+        let app = XCUIApplication()
+        app.otherElements.containing(.navigationBar, identifier:"Rentals").children(matching: .other).element.children(matching: .other).element.tap()
+        app.sheets.collectionViews.buttons["Yes"].tap()
+        app.textFields["Name"].tap()
+        //app.textFields["Name"]
+        app.textFields["Card Number"].tap()
+        //app.textFields["Card Number"]
+        
+        let cvvTextField = app.textFields["CVV"]
+        cvvTextField.tap()
+        app.buttons["Expiry"].tap()
+        app.buttons["Done"].tap()
+        cvvTextField.tap()
+        //app.textFields["CVV"]
+        app.navigationBars["Payment"].buttons["Pay"].tap()
+        
+        let okButton = app.alerts["Success"].collectionViews.buttons["OK"]
+        okButton.tap()
+        
     }
     
 }

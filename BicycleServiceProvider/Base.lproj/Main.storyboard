@@ -73,7 +73,7 @@
                                 <rect key="frame" x="-4" y="0.0" width="383" height="687"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBo-80-ueB">
-                                <rect key="frame" x="62.5" y="219.5" width="250" height="228"/>
+                                <rect key="frame" x="63" y="220" width="250" height="228"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VZp-oL-mUF">
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="228"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,13 +183,13 @@
                                 <rect key="frame" x="-4" y="0.0" width="383" height="687"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eO-5H-Ms7">
-                                <rect key="frame" x="67" y="199.5" width="241" height="268"/>
+                                <rect key="frame" x="67" y="200" width="241" height="268"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8oO-8d-Wlu">
                                     <rect key="frame" x="0.0" y="0.0" width="241" height="268"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REGISTER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbX-Gq-ZCN">
-                                            <rect key="frame" x="77.5" y="8" width="86" height="21"/>
+                                            <rect key="frame" x="78" y="8" width="86" height="21"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.26274509800000001" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>

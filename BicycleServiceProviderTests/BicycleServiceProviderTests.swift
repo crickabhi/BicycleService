@@ -14,6 +14,9 @@ class BicycleServiceProviderTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let exampleViewController = mainStoryboard.instantiateViewController(withIdentifier: "Login") as! LoginViewController
+
     }
     
     override func tearDown() {
@@ -31,6 +34,10 @@ class BicycleServiceProviderTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func loginValidator(){
+        XCTAssert(true)
     }
     
 }
