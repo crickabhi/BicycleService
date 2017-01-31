@@ -58,15 +58,14 @@ class BicycleServiceProviderUITests: XCTestCase {
         
         let app = XCUIApplication()
         app.otherElements.containing(.navigationBar, identifier:"Rentals").children(matching: .other).element.children(matching: .other).element.tap()
-        app.sheets.collectionViews.buttons["Yes"].tap()
+        app.sheets.buttons["Yes"].tap()
         app.textFields["Name"].tap()
         //app.textFields["Name"]
-        app.textFields["Card Number"].tap()
+        app.textFields["Card"].tap()
         //app.textFields["Card Number"]
-        
-        let cvvTextField = app.textFields["CVV"]
+        app.pickers["Expiry"].tap()
+        let cvvTextField = app.textFields["code"]
         cvvTextField.tap()
-        app.buttons["Expiry"].tap()
         app.buttons["Done"].tap()
         cvvTextField.tap()
         //app.textFields["CVV"]

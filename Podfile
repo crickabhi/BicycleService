@@ -9,7 +9,9 @@ target 'BicycleServiceProvider' do
 end
 
 target 'BicycleServiceProviderTests' do
-
+    	pod 'Alamofire'
+    	pod 'GoogleMaps'
+        pod 'GooglePlaces'
 end
 
 target 'BicycleServiceProviderUITests' do
