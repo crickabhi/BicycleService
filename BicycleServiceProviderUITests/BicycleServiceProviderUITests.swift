@@ -30,50 +30,24 @@ class BicycleServiceProviderUITests: XCTestCase {
     
     func testLogin() {
         
-        let app = XCUIApplication()
-        app.textFields["Email"].tap()
-        //app.textFields["Email"]
-        app.secureTextFields["Password"].tap()
-        //app.secureTextFields["Password"]
-        app.buttons["LOGIN"].tap()
+        let testApp = XCUIApplication()
+        testApp.textFields["Email"].tap()
+        testApp.textFields["Email"].typeText("crossover@crossover.com")
+        testApp.secureTextFields["Password"].tap()
+        testApp.secureTextFields["Password"].typeText("crossover")
+        testApp.buttons["LOGIN"].tap()
         
     }
     
     func testRegistration(){
         
-        let app = XCUIApplication()
-        app.buttons["SIGN UP"].tap()
-        
-        let emailTextField = app.textFields["Email"]
-        emailTextField.tap()
-        //app.textFields["Email"]
-        emailTextField.tap()
-        app.secureTextFields["Password"].tap()
-        //app.secureTextFields["Password"]
-        app.buttons["SUBMIT"].tap()
+        let testApp = XCUIApplication()
+        testApp.buttons["SIGN UP"].tap()
+        testApp.textFields["Email"].tap()
+        testApp.textFields["Email"].typeText("crossover@crossover.com")
+        testApp.secureTextFields["Password"].tap()
+        testApp.secureTextFields["Password"].typeText("crossover")
+        testApp.buttons["SUBMIT"].tap()
         
     }
-    
-    func testPayment(){
-        
-        let app = XCUIApplication()
-        app.otherElements.containing(.navigationBar, identifier:"Rentals").children(matching: .other).element.children(matching: .other).element.tap()
-        app.sheets.buttons["Yes"].tap()
-        app.textFields["Name"].tap()
-        //app.textFields["Name"]
-        app.textFields["Card"].tap()
-        //app.textFields["Card Number"]
-        app.pickers["Expiry"].tap()
-        let cvvTextField = app.textFields["code"]
-        cvvTextField.tap()
-        app.buttons["Done"].tap()
-        cvvTextField.tap()
-        //app.textFields["CVV"]
-        app.navigationBars["Payment"].buttons["Pay"].tap()
-        
-        let okButton = app.alerts["Success"].collectionViews.buttons["OK"]
-        okButton.tap()
-        
-    }
-    
 }
